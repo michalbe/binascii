@@ -20,3 +20,7 @@ assert.equal(ba.unhexlify('50616d696574616d79203434'), 'Pamietamy 44');
 
 // Binary data
 assert.equal(ba.unhexlify('377abcaf271c'), '7z¼¯\'\u001c');
+
+// Aliases
+assert(ba.unhexlify === ba.a2b_hex);
+assert(ba.hexlify === ba.b2a_hex);

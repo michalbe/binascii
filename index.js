@@ -1,5 +1,6 @@
 'use strict';
 
+// Based on https://docs.python.org/2/library/binascii.html
 var binascii = (function(){
 
   var hexlify = function(str) {
@@ -20,7 +21,10 @@ var binascii = (function(){
 
 
   return {
+    b2a_hex: hexlify,
     hexlify: hexlify,
+
+    a2b_hex: unhexlify,
     unhexlify: unhexlify
   };
 
