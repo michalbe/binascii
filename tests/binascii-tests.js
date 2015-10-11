@@ -24,3 +24,6 @@ assert.equal(ba.unhexlify('377abcaf271c'), '7z¼¯\'\u001c');
 // Aliases
 assert(ba.unhexlify === ba.a2b_hex);
 assert(ba.hexlify === ba.b2a_hex);
+
+// Ensure single-digit codes are correctly padded
+assert.equal(ba.hexlify('\n'), '0a');

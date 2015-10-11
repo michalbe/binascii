@@ -5,8 +5,11 @@ var binascii = (function(){
 
   var hexlify = function(str) {
     var result = '';
+    var padding = '00';
     for (var i=0, l=str.length; i<l; i++) {
-      result += str.charCodeAt(i).toString(16);
+      var digit = str.charCodeAt(i).toString(16);
+      var padded = (padding+digit).slice(-2);
+      result += padded;
     }
     return result;
   };
