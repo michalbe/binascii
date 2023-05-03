@@ -2,6 +2,7 @@
   "name": "binascii",
   "version": "0.0.2",
   "author": "Michał Budzyński <michal@virtualdesign.pl>",
+  "license": "MIT",
   "repository": "git@github.com:michalbe/binascii.git",
   "devDependencies": {
     "assert": "^1.1.1",
