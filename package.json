@@ -1,6 +1,8 @@
 {
   "name": "binascii",
   "version": "0.0.2",
+  "main": "index.js",
+  "types": "index.d.ts",
   "author": "Michał Budzyński <michal@virtualdesign.pl>",
   "repository": "git@github.com:michalbe/binascii.git",
   "devDependencies": {
