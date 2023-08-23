@@ -1,18 +1,9 @@
-type Binascii = typeof binascii;
-
-declare namespace binascii{
-    export type hexlify = (data: string) => string;
-    export type unhexlify = (data: string) => string;
-    export type b2a_hex = (data: string) => string;
-    export type a2b_hex = (data: string) => string;
-
-    // named export
-    // import { plugin } from 'plugin'
-    // const { plugin } = require('plugin')
-    export const binascii: Binascii
-    // default export
-    // import plugin from 'plugin'
-    export {binascii as default}
-}
-
-export = binascii;
+declare var hexlify: (str: any) => string;
+declare var unhexlify: (str: any) => string;
+declare const all: {
+    hexlify: (str: any) => string;
+    unhexlify: (str: any) => string;
+    b2a_hex: (str: any) => string;
+    a2b_hex: (str: any) => string;
+};
+export { hexlify, unhexlify, hexlify as b2a_hex, unhexlify as a2b_hex, all as default };
