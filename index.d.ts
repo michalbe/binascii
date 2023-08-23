@@ -14,3 +14,5 @@ declare namespace binascii{
     // import plugin from 'plugin'
     export {binascii as default}
 }
+
+export = binascii;
